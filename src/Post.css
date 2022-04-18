@@ -26,6 +26,10 @@
   margin-bottom:5px;
 }
 
+.post__headerDescription{
+  margin-bottom:10px;
+}
+
 .post__badge{
   font-size:14px !important;
   color: var(--twitter-color);
