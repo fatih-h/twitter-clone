@@ -1,5 +1,12 @@
 .widgets{
-  flex:0.3;
+  flex:0 1 30%;
+  min-width: fit-content;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.widgets::-webkit-scrollbar{
+  display:none;
 }
 
 .widgets__input{

@@ -11,12 +11,12 @@ function TweetBox() {
     e.preventDefault();
 
     db.collection("posts").add({
-      displayName: "The Turk",
-      username: "calis_calis_nereye_kadar",
-      verified:false,
+      displayName: "Joe Rogan",
+      username: "joerogan",
+      verified:true,
       text: tweetMessage,
       image:tweetImage,
-      avatar:"https://pbs.twimg.com/profile_images/1222646977332174849/xWcD6t_Q_400x400.jpg"
+      avatar:"https://pbs.twimg.com/profile_images/552307347851210752/vrXDcTFC_400x400.jpeg"
     });
 
     setTweetMessage("");
@@ -27,7 +27,7 @@ function TweetBox() {
     <div className="tweetBox">
       <form>
         <div className="tweetBox__input">
-          <Avatar src="https://pbs.twimg.com/profile_images/1222646977332174849/xWcD6t_Q_400x400.jpg" />
+          <Avatar src="https://pbs.twimg.com/profile_images/552307347851210752/vrXDcTFC_400x400.jpeg" />
           <input
             value={tweetMessage}
             onChange = {(e) => setTweetMessage(e.target.value)}  
